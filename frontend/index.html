@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DuckCounter - Prediksi Jumlah Bebek Otomatis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">DuckCounter</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#upload">Prediksi</a></li>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#about">Tentang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Prediksi Jumlah Bebek Secara Otomatis</h1>
+      <p>
+        Gunakan teknologi AI canggih untuk menghitung jumlah bebek dalam gambar atau video Anda dengan akurat menggunakan model <code>best.pt</code>.
+      </p>
+      <a href="#upload" class="btn">Coba Sekarang</a>
+    </div>
+  </section>
+
+  <section class="upload-section" id="upload">
+    <div class="container">
+      <h2>Upload Media Anda</h2>
+      <p>Unggah gambar atau video untuk memprediksi jumlah bebek</p>
+
+      <div class="upload-container">
+        <div class="upload-area" id="upload-area">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <h3>Seret & Lepaskan File di Sini</h3>
+          <p>Atau klik untuk memilih file</p>
+          <p>Format yang didukung: JPG, PNG, MP4, AVI</p>
+        </div>
+        <input type="file" id="file-input" accept="image/*, video/*" />
+        <button class="btn" id="predict-btn" disabled>Mulai Prediksi</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="result-section" id="result" style="display: none;">
+    <div class="container result-container">
+      <h2>Hasil Prediksi</h2>
+      <div class="image-container">
+        <img id="result-image" class="result-image" src="" alt="Hasil Prediksi" />
+        <video id="result-video" class="result-image" controls style="display: none;"></video>
+      </div>
+      <div class="count-display">
+        Jumlah Bebek: <span id="count">0</span>
+      </div>
+      <div id="detection-details" class="detection-details"></div>
+      <button class="btn" id="try-again-btn">Coba Lagi</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Fitur Unggulan</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-bolt"></i>
+          <h3>Cepat dan Akurat</h3>
+          <p>
+            Menggunakan model <code>best.pt</code> yang telah dilatih untuk mendeteksi bebek dengan akurasi tinggi.
+          </p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-images"></i>
+          <h3>Multi Format</h3>
+          <p>Mendukung berbagai format gambar dan video untuk prediksi.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Analisis Lanjutan</h3>
+          <p>Memberikan informasi statistik tentang prediksi yang dilakukan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="about">
+    <div class="container">
+      <h3>DuckCounter</h3>
+      <p>Solusi canggih untuk menghitung jumlah bebek secara otomatis menggunakan teknologi AI.</p>
+      <p>&copy; 2025 DuckCounter. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script3.js"></script>
+</body>
+</html>

@@ -1,19 +1,19 @@
 # 🦆 DuckCount - Computer Vision Project
 
-DuckCount adalah proyek Computer Vision yang dibuat untuk mendeteksi dan menghitung jumlah bebek dalam sebuah gambar menggunakan model YOLOv8 dari Ultralytics. Proyek ini bertujuan sebagai eksperimen sederhana dalam bidang deteksi objek dengan deep learning dan pengolahan citra.
+DuckCount is a simple Computer Vision project designed to detect and count ducks in an image using the YOLOv8 model from Ultralytics. This project serves as a basic experiment in object detection using deep learning and image processing techniques.
 
 ---
 
-## 📌 Fitur Utama
+## 📌 Features
 
-- Deteksi objek bebek secara otomatis dari gambar
-- Menampilkan bounding box hasil deteksi
-- Implementasi YOLOv8 dari Ultralytics
-- Dapat dijalankan secara lokal maupun di Google Colab
+- Automatically detects duck objects in an image
+- Displays detection results with bounding boxes
+- Implements YOLOv8 by Ultralytics
+- Can be run locally or on Google Colab
 
 ---
 
-## 🧠 Teknologi yang Digunakan
+## 🧠 Technologies Used
 
 - Python 3.x
 - Ultralytics (YOLOv8)
@@ -23,74 +23,74 @@ DuckCount adalah proyek Computer Vision yang dibuat untuk mendeteksi dan menghit
 
 ---
 
-## 📁 Struktur Proyek
+## 📁 Project Structure
 
 ```
 DuckCount-ComputerVision/
-├── datasets/               # Dataset pelatihan dan pengujian
-├── images/                 # Gambar uji deteksi
-├── model/                  # Model YOLOv8 (.pt file)
+├── datasets/               # Training and testing datasets
+├── images/                 # Test images for detection
+├── model/                  # YOLOv8 model files (.pt)
 ├── src/
-│   └── detect_ducks.py     # Script deteksi bebek
-├── duckcount.ipynb         # Notebook eksplorasi dan visualisasi
-└── README.md               # Dokumentasi proyek
+│   └── detect_ducks.py     # Main duck detection script
+├── duckcount.ipynb         # Colab notebook for exploration and demo
+└── README.md               # Project documentation
 ```
 
 ---
 
-## 🚀 Cara Menjalankan Proyek
+## 🚀 How to Run the Project
 
-### 🔧 1. Clone Repository
+### 🔧 1. Clone the Repository
 
 ```bash
 git clone https://github.com/TaQINgs/DuckCount-ComputerVision.git
 cd DuckCount-ComputerVision
 ```
 
-### 📦 2. Instalasi Dependensi
+### 📦 2. Install Dependencies
 
 ```bash
 pip install ultralytics opencv-python matplotlib
 ```
 
-Atau jalankan langsung di Google Colab menggunakan file `duckcount.ipynb`.
+Alternatively, you can use the `duckcount.ipynb` notebook directly on Google Colab.
 
-### 🧪 3. Jalankan Deteksi
+### 🧪 3. Run the Detection Script
 
 ```bash
 python src/detect_ducks.py --source images/test.jpg
 ```
 
-> Pastikan file model (`.pt`) berada di folder `model/` dan telah disesuaikan dalam kode `detect_ducks.py`.
+> Make sure the model file (`.pt`) is located in the `model/` folder and referenced correctly in `detect_ducks.py`.
 
 ---
 
-## 🖼️ Contoh Hasil
+## 🖼️ Example Output
 
-Berikut adalah contoh hasil deteksi dengan bounding box:
+The detection results will display an image with bounding boxes like this:
 
-![Contoh Deteksi](images/sample_result.jpg)
-
----
-
-## 📝 Catatan Tambahan
-
-- Dataset disiapkan dalam format YOLO (gambar dan anotasi .txt)
-- Model YOLOv8 dapat dilatih ulang menggunakan Ultralytics CLI atau notebook
-- Gambar uji dapat ditambahkan ke folder `images/`
-- File `.pt` hasil training sendiri bisa digunakan untuk meningkatkan akurasi
+![Sample Detection](images/sample_result.jpg)
 
 ---
 
-## 🤝 Kontribusi
+## 📝 Additional Notes
 
-Kontribusi sangat terbuka! Silakan fork repository ini dan ajukan pull request untuk fitur baru, perbaikan bug, atau peningkatan dokumentasi.
+- The dataset is prepared in YOLO format (images and `.txt` annotations)
+- The YOLOv8 model can be retrained using the Ultralytics CLI or the provided notebook
+- Test images can be added to the `images/` folder
+- Custom-trained `.pt` models can be used to improve accuracy
 
 ---
 
-## 📄 Lisensi
+## 🤝 Contributing
 
-MIT License – silakan digunakan dan dimodifikasi untuk keperluan pembelajaran.
+Contributions are welcome! Feel free to fork this repository and submit a pull request with new features, bug fixes, or documentation improvements.
+
+---
+
+## 📄 License
+
+MIT License — feel free to use and modify for learning or personal experimentation.
 
 ---
 
